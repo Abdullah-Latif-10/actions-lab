@@ -12,8 +12,7 @@ function createApp() {
   let nextId = 3;
 
   app.get('/health', (req, res) => {
-    res.json({ status: 'ok' });
-  });
+res.json({ status: 'down' });  });
 
   app.get('/tasks', (req, res) => {
     res.json(tasks);
